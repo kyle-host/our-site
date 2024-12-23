@@ -1,0 +1,13 @@
+:root {
+    --vh: 100vh;
+}
+@media (max-width: 768px) {
+    :root {
+        --vh: calc(var(--vh, 1vh) * 100);
+    }
+}
+.container {
+    height: var(--vh);
+}
+/* mobile.css */
+@import url('./styles.css');

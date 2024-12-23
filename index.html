@@ -1,0 +1,52 @@
+<!-- ** Index file **
+this would redirect people to the subdomians for free and paid services
+it should still have some content on it and not just two buttons
+the css should be optimised and i will take care of compression of any files-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | App Directory</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function isMobileDevice() {
+            return /Mobi|Android/i.test(navigator.userAgent);
+        }
+        if (isMobileDevice()) {
+            var link = document.createElement("link");
+            link.rel = "stylesheet";
+            link.href = "mobile.css";
+            document.head.appendChild(link);
+        }
+    </script>
+</head>
+<div class="container">
+    <nav class="navbar">
+        <a href="index.html"><button>Home</button></a>
+        <a href="free.html"><button>Free</button></a>
+        <a href="paid.html"><button>Paid</button></a>
+        <a href="contact.html"><button>Contact</button></a>
+        <a href="about.html"><button>About</button></a>
+        <div class="placeholder1">
+            <a href="login.html"><button>Login</button></a>
+            <a href="signup.html"><button>Sign Up</button></a>
+        </div>
+    </nav>
+
+    <body>
+        <h1>Welcome to the KMG App Directory</h1>
+        <p>This is the home page of the App Directory pretty much a page that will redirect you to one of our <br>
+            sub-domains based on the services your looking for <br>To get started, please select a category from the
+            buttons below.</p>
+        <p>Thank you for visiting!</p>
+        <div class="centered">
+            <a href="https://paid.kmg.work.gd/"><button>Paid</button></a>
+            <a href="https://free.kmg.work.gd/"><button>Free</button></a>
+        </div>
+    </body>
+    <footer class="footer">
+        <p>Copyright © 2023 KMG, All rights reserved.</p>
+    </footer>
+</div>
+</html>
